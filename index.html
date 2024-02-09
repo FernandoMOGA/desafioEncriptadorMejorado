@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>Desafio Encriptador ONE</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="contenedorNavegacion">
+            <img class="icon-historial" src="./img/menu-svgrepo-com.svg" alt="">
+            <div class="navText">
+                <p>ShieldPass</p>
+                <img class="redesIcon" src="./img/arrow-narrow-circle-broken-right-svgrepo-com.svg" alt="">
+                <section class="redes display">
+                    <a href="https://github.com/FernandoMOGA/desafioEncriptadorMejorado">
+                        <img src="./img/github-142-svgrepo-com.svg" alt="">
+                    </a>
+                    <a href="https://www.linkedin.com/feed/">
+                        <img src="./img/linkedin-svgrepo-com.svg" alt="">
+                    </a>
+                </section>
+            </div>
+            <img class="presentacionIcon" src="./img/note-text-svgrepo-com.svg" alt="">
+        </nav>
+    </header>
+
+    <section class="error display">
+        <p>Tu mensaje contiene alguno de estos errores</p>
+        <div class="listError">
+            <ul>
+                <li>Texto con alguna mayuscula</li>
+                <li>Texto con numeros</li>
+                <li>Texto con algun caracter especial</li>
+                <li>Tu mensaje esta vacio</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="historial display">
+        <div class="closeHistorial">
+            <img src="./img/close-ellipse-svgrepo-com.svg" alt="">
+        </div>
+        <p class="historial-title">Historial</p>
+        <div class="historial-contenido">
+            
+        </div>
+    </section>
+
+    <section class="presentacion display">
+        <h1 class="tituloPresentacion">Presentacion</h1>
+        <p>Mi nombre es Fernando, orgullosamente mexicano. Actualmente, resido en el estado de "Gufatainaijufataitober". Estoy emocionado de participar como candidato para el programa ONE, una colaboración entre Oracle y AluraLatam.</p> <br>
+        <p>Mi pasión por la tecnología y el desarrollo me ha llevado a aspirar a convertirme en un desarrollador full stack. Aunque sé que tengo mucho camino por recorrer, estoy comprometido y emocionado por enfrentar los desafíos que vendrán.</p> <br>
+        <p>Participar en el desafío del código encriptador es una oportunidad que estoy ansioso por aprovechar. Creo que cada desafío es una oportunidad para aprender y crecer en este fascinante mundo de la programación.</p> <br>
+        <p>Si tienes preguntas o simplemente quieres compartir algo, estoy aquí. Puedes encontrarme en mis redes sociales que he proporcionado en la sección correspondiente. ¡Espero con entusiasmo tus comentarios y estoy listo para el viaje que viene! </p>
+        <div class="iconsPresentacion">
+            <img src="./img/html-svgrepo-com.svg" alt="">
+            <img src="./img/css-svgrepo-com.svg" alt="">
+            <img src="./img/js-svgrepo-com.svg" alt="">
+            <img src="./img/sass-file-svgrepo-com.svg" alt="">
+            <img src="./img/tailwind-svgrepo-com.svg" alt="">
+            <img src="./img/react-svgrepo-com.svg" alt="">
+            <img src="./img/github-142-svgrepo-com.svg" alt="">
+        </div>
+        <div class="oracleAlura">
+            <img src="./img/aluraoracle.png" alt="">
+        </div>
+    </section>
+
+    <main class="mainContenedor">
+        <Section class="contenedorMensajes">
+            
+        </Section>
+        <section class="inputContenedor">
+            <button class="buttonCodificar button">
+                <img class="codificar" src="./img/padlock-outlined-svgrepo-com.svg" alt="">
+            </button>
+            <textarea class="inputMensaje" placeholder="Escribre aqui tu mensaje"></textarea>
+            <button class="buttonDecodificar button">
+                <img class="decodificar" src="./img/padlock-unlocked-outlined-svgrepo-com.svg" alt="">
+            </button>
+        </section>
+    </main>
+    <script src="./main.js"></script>
+</body>
+</html>
