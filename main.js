@@ -8,12 +8,14 @@ var historial = document.querySelector('.icon-historial');
 var contenidoHistorial = document.querySelector('.historial-contenido');
 var consolaHistorial = document.querySelector('.historial');
 var error = document.querySelector('.error');
-
 var array = [];
-
 var mensajeUp;
-
 var continuar = false;
+var presentacionIcon = document.querySelector('.presentacionIcon');
+var presentacion = document.querySelector('.presentacion');
+var redesIcon = document.querySelector('.redesIcon');
+var redes = document.querySelector('.redes');
+var closeHistorial = document.querySelector('.closeHistorial');
 
 
 // Evento para agregar elementos a la consola del historial con el buttonCodificar
@@ -169,8 +171,7 @@ function copiar(e) {
 }
 
 // Funcion para la consola de presentacion
-var presentacionIcon = document.querySelector('.presentacionIcon');
-var presentacion = document.querySelector('.presentacion');
+
 presentacionIcon.addEventListener('click', consolaPresentacion);
 function consolaPresentacion() {
     presentacion.classList.toggle('display')
@@ -184,8 +185,7 @@ function consolaPresentacion() {
 
 
 // Funcion para la consola de redes
-var redesIcon = document.querySelector('.redesIcon');
-var redes = document.querySelector('.redes');
+
 
 redesIcon.addEventListener('click', consolaSocial);
 
@@ -199,7 +199,7 @@ function consolaSocial() {
 
 
 // Funcion para la consola del Historial
-var closeHistorial = document.querySelector('.closeHistorial');
+
 
 historial.addEventListener('click', consolaHis);
 closeHistorial.addEventListener('click', removeHis);

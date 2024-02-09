@@ -1,4 +1,4 @@
-/* General Styles */
+/* Estilos Generales */
 body {
     background-color: black;
     background-image: url(/img/pexels-elti-meshau-333850.jpg);
@@ -17,7 +17,7 @@ img:hover {
     cursor: pointer;
 }
 
-/* Header Styles */
+/* Contenedor Header */
 .header {
     padding-top: 60px;
     padding-left: 5px;
@@ -28,13 +28,6 @@ img:hover {
     width: 100%;
     max-width: 700px;
     position: relative;
-}
-
-@media (max-width: 600px) {
-    .header {
-        max-width: 350px;
-
-    }
 }
 
 .contenedorNavegacion {
@@ -58,7 +51,7 @@ img:hover {
     width: 30px;
 }
 
-/* Main Content Styles */
+/* Contenedor Main*/
 .mainContenedor {
     width: 100%;
     display: flex;
@@ -94,6 +87,7 @@ button {
     background-color: white;
     max-width: 700px;
 }
+
 .inputMensaje {
     border: none;
     font-weight: bold;
@@ -105,7 +99,8 @@ button {
     overflow-y: auto;
     white-space: pre-wrap;
 }
-/* Message Container Styles */
+
+/* Contenedor mensajes */
 .contenedorMensajes {
     width: 90vw;
     max-width: 700px;
@@ -120,23 +115,25 @@ button {
 }
 
 .mensaje {
-    padding: 10px; /* Aumentar el espacio interno para mayor legibilidad */
-    overflow-wrap: break-word; /* Manejar saltos de línea y espacios */
-    margin-bottom: 10px; /* Ajustar el margen inferior */
-    width: 80%; /* Limitar el ancho del contenedor */
-    margin-left: auto; /* Mover el contenedor hacia la derecha */
-    margin-right: auto; /* Mover el contenedor hacia la derecha */
+    padding: 10px;
+    overflow-wrap: break-word;
+    margin-bottom: 10px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
     text-align: left;
     border: 1px solid white;
     border-radius: 5px;
     margin-bottom: 7px;
     position: relative;
 }
+
 .imgCopy {
     position: absolute;
     right: -24px;
     top: 2px;
 }
+
 .mensaje p {
     flex: 1;
     padding: 5px;
@@ -146,9 +143,7 @@ button {
     width: 25px;
 }
 
-/* Historial Styles */
-
-/* Historial Container Styles */
+/* Consola de Historial */
 .historial {
     background-color: black;
     position: absolute;
@@ -187,25 +182,27 @@ button {
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
 }
+
 .historial-icons {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-bottom: 5px;
 }
+
 .historial-historia {
     background-color: rgba(0, 0, 0, 0.9);
     text-align: center;
     color: white;
     border: 1px solid white;
     border-radius: 10px;
-    padding: 10px; /* Aumentar el espacio interno para mayor legibilidad */
-    overflow-wrap: break-word; /* Manejar saltos de línea y espacios */
-    margin-bottom: 10px; /* Ajustar el margen inferior */
-    max-width: 80%; /* Limitar el ancho del contenedor */
-    margin-left: auto; /* Mover el contenedor hacia la derecha */
-    margin-right: auto; /* Mover el contenedor hacia la derecha */
-    text-align: left; /* Alinear el texto a la izquierda */
+    padding: 10px;
+    overflow-wrap: break-word;
+    margin-bottom: 10px;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
 }
 
 
@@ -218,7 +215,7 @@ button {
     width: 30px;
 }
 
-/* Redes Styles */
+/* Consola de Redes Sociales */
 .redes {
     position: absolute;
     top: 40px;
@@ -244,24 +241,7 @@ button {
     border-radius: 10px;
 }
 
-/* Display Styles */
-.display {
-    display: none;
-}
-
-@media (max-width: 500px) {
-    .inputMensaje {
-        height: 25px;
-    }
-    .inputContenedor {
-        height: 35px;
-    }
-    .mensaje img {
-        width: 25px;
-    }
-}
-
-/* Presentacion */
+/* Consola de Presentacion */
 .presentacion {
     background-color: white;
     color: black;
@@ -276,16 +256,19 @@ button {
     height: 60vh;
     overflow-y: auto;
 }
+
 .tituloPresentacion {
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 10px;
 }
+
 .presentacion img {
     width: 50px;
     transition: 2s;
 }
+
 .iconsPresentacion {
     display: flex;
     flex-wrap: wrap;
@@ -295,20 +278,24 @@ button {
     align-items: center;
     margin-top: 30px;
 }
+
 .iconsPresentacion img:hover {
     width: 80px;
     transition: 1s;
 }
+
 .oracleAlura {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .oracleAlura img {
     width: 80vw;
     max-width: 500px;
 }
 
+/* Consola de error Estilo */
 .error {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.9);
@@ -321,17 +308,46 @@ button {
     padding: 10px;
     z-index: 99;
 }
+
 .error p {
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
 }
+
 .listError {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 10px;
 }
-.error ul{
-    list-style-type:square;
+
+.error ul {
+    list-style-type: square;
+}
+
+/* Display */
+.display {
+    display: none;
+}
+
+/* MediasQueries */
+@media (max-width: 500px) {
+    .inputMensaje {
+        height: 25px;
+    }
+
+    .inputContenedor {
+        height: 35px;
+    }
+
+    .mensaje img {
+        width: 25px;
+    }
+}
+
+@media (max-width: 600px) {
+    .header {
+        max-width: 350px;
+    }
 }
