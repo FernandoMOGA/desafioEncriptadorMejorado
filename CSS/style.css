@@ -11,6 +11,7 @@ body {
     justify-content: center;
     align-items: center;
     box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
 }
 
 img:hover {
@@ -19,7 +20,7 @@ img:hover {
 
 /* Contenedor Header */
 .header {
-    padding-top: 60px;
+    padding-top: 20px;
     padding-left: 5px;
     padding-right: 5px;
     padding-bottom: 10px;
@@ -62,6 +63,7 @@ img:hover {
     flex: 1;
     margin-bottom: 10px;
     max-width: 700px;
+    margin-bottom: 50px;
 }
 
 button {
@@ -110,7 +112,7 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: end;
-    height: 83vh;
+    height: 70vh;
     overflow-y: auto;
 }
 
@@ -251,13 +253,13 @@ button {
     max-width: 800px;
     padding: 5px;
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     border-radius: 15px;
     height: 60vh;
     overflow-y: auto;
 }
 
-.tituloPresentacion {
+.tituloPresentacion, .tituloIndicaciones {
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
@@ -294,7 +296,20 @@ button {
     width: 80vw;
     max-width: 500px;
 }
-
+.indicaciones{
+    padding: 15px;
+}
+.indicaciones ul {
+    list-style-type: disc;
+}
+.indicaciones li {
+    margin-bottom: 10px;
+}
+.indicaciones span {
+    text-transform: uppercase;
+    font-weight: bold; /* Hacer el texto del span en negrita */
+    color: #336699; /* Cambiar el color del texto */
+}
 /* Consola de error Estilo */
 .error {
     position: absolute;
