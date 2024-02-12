@@ -75,7 +75,7 @@ function decodificarCadena(inputString) {
     nuevoString = nuevoString.replace(/ai/g, 'a');
     nuevoString = nuevoString.replace(/imes/g, 'i');
     nuevoString = nuevoString.replace(/enter/g, 'e');
-    return nuevoString;
+    return nuevoString; 
 }
 
 // Funcion que valida que el texto no este vacio
