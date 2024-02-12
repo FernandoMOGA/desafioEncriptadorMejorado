@@ -95,6 +95,7 @@ button {
     font-weight: bold;
     font-size: 20px;
     height: 40px;
+    max-height: 40px;
     width: 100vw;
     margin: 4px;
     resize: vertical;
@@ -305,10 +306,24 @@ button {
 .indicaciones li {
     margin-bottom: 10px;
 }
-.indicaciones span {
-    text-transform: uppercase;
-    font-weight: bold; /* Hacer el texto del span en negrita */
-    color: #336699; /* Cambiar el color del texto */
+.imgIndicaciones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.imgIndicaciones img {
+    background-color: black;
+    width: 30px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.imgIndicacionesBlock {
+    display: flex;
+    column-gap: 20px;
+}
+.imgIndicacionesBlock img {
+    background-color: white;
 }
 /* Consola de error Estilo */
 .error {
@@ -350,6 +365,7 @@ button {
 @media (max-width: 500px) {
     .inputMensaje {
         height: 25px;
+        max-height: 25px;
     }
 
     .inputContenedor {
