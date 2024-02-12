@@ -70,11 +70,11 @@ function codificarCadena(inputString) {
 }
 // Funcion para decodificar el texto
 function decodificarCadena(inputString) {
-    let nuevoString = inputString.value.replace(/enter/g, 'e');
-    nuevoString = nuevoString.replace(/imes/g, 'i');
-    nuevoString = nuevoString.replace(/ai/g, 'a');
+    let nuevoString = inputString.value.replace(/ufat/g, 'u');
     nuevoString = nuevoString.replace(/ober/g, 'o');
-    nuevoString = nuevoString.replace(/ufat/g, 'u');
+    nuevoString = nuevoString.replace(/ai/g, 'a');
+    nuevoString = nuevoString.replace(/imes/g, 'i');
+    nuevoString = nuevoString.replace(/enter/g, 'e');
     return nuevoString;
 }
 
