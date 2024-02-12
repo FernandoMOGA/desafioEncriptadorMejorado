@@ -66,7 +66,7 @@ function codificarCadena(inputString) {
     nuevoString = nuevoString.replace(/a/g, 'ai');
     nuevoString = nuevoString.replace(/o/g, 'ober');
     nuevoString = nuevoString.replace(/u/g, 'ufat');
-    return nuevoString;
+    return nuevoString; 
 }
 // Funcion para decodificar el texto
 function decodificarCadena(inputString) {
